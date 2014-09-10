@@ -1,4 +1,4 @@
-Example environment for working through the Coursera algorithms classes using maven and junit.
+This is an example environment for working through the Coursera algorithms classes using maven and junit.
 Also includes some helper scripts (in bash) for running your code and recording timings.
 
 ## Directory structure
@@ -42,7 +42,14 @@ After installing java 7 and maven, clone this and run `mvn test`. You should see
 ```
 
 ## How to
-### Run all of the tests
+
+### Compile your code:
+
+```
+  $ mvn compile
+```
+
+### Run all of your JUnit tests
 
 ```
   $ mvn test
