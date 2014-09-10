@@ -3,6 +3,8 @@ Also includes some helper scripts (in bash) for running your code and recording 
 
 ## Directory structure
 
+The directory structure follows maven convention.
+
 Production code goes in `src/main/java`
 
 Test code goes in `src/test/java`
