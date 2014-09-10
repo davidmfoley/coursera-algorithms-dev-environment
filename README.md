@@ -14,10 +14,13 @@ See src/main/PrimeFactors.java and src/test/PrimeFactorsTest.java for example of
 * Java 7 (check with `java -version` - should start with 1.7)
 * Maven 3 (download: http://maven.apache.org/download.cgi)
 
+* OS X (tested) or linux (probably works), to run the helper scripts
+
 ## Setup
 
 After installing java 7 and maven, clone this and run `mvn test`. You should see a bunch of output that ends with something like the following:
 
+```
   -------------------------------------------------------
    T E S T S
   -------------------------------------------------------
@@ -36,17 +39,25 @@ After installing java 7 and maven, clone this and run `mvn test`. You should see
   [INFO] Final Memory: 14M/245M
   [INFO] ------------------------------------------------------------------------C
 
+```
+
 ## How to
 ### Run all of the tests
 
+```
   $ mvn test
+```
 
 ### Run the main function in class PrimeFactors with a command line arg (for example)
 
+```
   $ ./run PrimeFactors 600851475143
+```
 
 ### Run the main function in class PrimeFactors and record the results in results/PrimeFactors.txt
 
+```
   $ ./record\_run PrimeFactors 600851475143
+```
 
   This will write some information about the current state of the working tree (git-wise) as well as the output and the timing (using unix time command). This can be useful when optimizing an algorithm and checking elapsed time compared to previous iterations.
