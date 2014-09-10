@@ -7,8 +7,9 @@ FILE="results/$1_results.txt"
 echo "results file: $FILE"
 
 mkdir -p results
-echo "===========================" >> $FILE
-echo "running $1 at $(date +"%F_%T")" >> $FILE
-echo "git: `git log --oneline -1`" >> $FILE
-git diff --shortstat >> $FILE
-./run $@ < /dev/stdin | tee -a $FILE
+echo "=========================================" >> $FILE
+echo "$(date +"%F_%T") (`git log --oneline -1`)" >> $FILE
+git status --porcelain >> $FILE
+echo "-----------------------------------------" >> $FILE
+echo "$ $@" >> $FILE
+(./run $@ < /dev/stdin) 2>&1 | tee -a $FILE
