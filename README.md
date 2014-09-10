@@ -4,7 +4,9 @@ Also includes some helper scripts (in bash) for running your code and recording 
 ## Directory structure
 
 Production code goes in `src/main/java`
+
 Test code goes in `src/test/java`
+
 `algs4.jar` and `stdlib.jar` (from the class) are in `src/libs`
 
 `pom.xml` is used by maven to build and test the code - check maven docs for more info
