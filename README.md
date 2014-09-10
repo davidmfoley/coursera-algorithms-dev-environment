@@ -7,6 +7,8 @@ Production code goes in *src/main/java*
 Test code goes in *src/test/java*
 algs4.jar and stdlib.jar (from the class) are in *src/libs*
 
+pom.xml is used by maven to build and test the code - check maven docs for more info
+
 See src/main/PrimeFactors.java and src/test/PrimeFactorsTest.java for example of production and test code. (This is not an actual exercise for the class, just an illustration).
 
 ## Prerequisites
@@ -41,6 +43,8 @@ After installing java 7 and maven, clone this and run `mvn test`. You should see
 
 ```
 
+Note: there are some maven warnings about using system scope. If you know of an easy way to fix this, let me know.
+
 ## How to
 
 ### Compile your code:
@@ -64,7 +68,8 @@ After installing java 7 and maven, clone this and run `mvn test`. You should see
 ### Run the main function in class PrimeFactors and record the results in results/PrimeFactors.txt
 
 ```
-  $ ./record\_run PrimeFactors 600851475143
+  $ ./record_run PrimeFactors 600851475143
 ```
 
   This will write some information about the current state of the working tree (git-wise) as well as the output and the timing (using unix time command). This can be useful when optimizing an algorithm and checking elapsed time compared to previous iterations.
+
