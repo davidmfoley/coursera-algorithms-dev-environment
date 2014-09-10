@@ -1,0 +1,2 @@
+#!/bin/sh
+time java -cp target/classes:src/libs/stdlib.jar:src/libs/algs4.jar $@ < /dev/stdin

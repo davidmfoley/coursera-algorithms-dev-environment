@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# run main function from {class} and record timing and git revision to results/{className}_results.txt
+
+FILE="results/$1_results.txt"
+
+echo "results file: $FILE"
+
+mkdir -p results
+echo "===========================" >> $FILE
+echo "running $1 at $(date +"%F_%T")" >> $FILE
+echo "git: `git log --oneline -1`" >> $FILE
+git diff --shortstat >> $FILE
+./run $@ < /dev/stdin | tee -a $FILE
