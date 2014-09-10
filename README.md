@@ -5,11 +5,13 @@ Also includes some helper scripts (in bash) for running your code and recording 
 
 Production code goes in *src/main/java*
 Test code goes in *src/test/java*
-algs4.jar and stdlib.jar (from the class) are in *src/libs*
+`algs4.jar` and `stdlib.jar` (from the class) are in *src/libs*
 
-pom.xml is used by maven to build and test the code - check maven docs for more info
+`pom.xml` is used by maven to build and test the code - check maven docs for more info
 
-See src/main/PrimeFactors.java and src/test/PrimeFactorsTest.java for example of production and test code. (This is not an actual exercise for the class, just an illustration).
+```run``` and ```record_run``` are helper scripts for running your code (`static main` functions)
+
+See `src/main/PrimeFactors.java` and `src/test/PrimeFactorsTest.java` for example of production and test code. (This is not an actual exercise for the class, just an illustration).
 
 ## Prerequisites
 
@@ -39,7 +41,7 @@ After installing java 7 and maven, clone this and run `mvn test`. You should see
   [INFO] Total time: 1.867s
   [INFO] Finished at: Tue Sep 09 18:46:59 PDT 2014
   [INFO] Final Memory: 14M/245M
-  [INFO] ------------------------------------------------------------------------C
+  [INFO] ------------------------------------------------------------------------
 
 ```
 
